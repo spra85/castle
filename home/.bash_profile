@@ -21,6 +21,7 @@ alias js="dev && cd javascript"
 alias esplug="open /Users/csprehe/Sites/elasticsearch-head/index.html"
 alias castle="cd /Users/csprehe/Sites/castle"
 alias soit="source ~/.bash_profile"
+alias bi="bundle install"
 
 # Git Aliases
 alias gs='git status'
@@ -34,6 +35,7 @@ alias gp='git push'
 alias gr='git pull --rebase'
 alias gv='git remote -v'
 alias gla='git gla'
+alias gap='git add -p'
 
 # Directory navigation
 alias ~="cd ~"
@@ -42,14 +44,17 @@ alias ..="cd ../"
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias lst="ls -alh"
-alias dt='cd ~/Desktop'
+alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
-alias db='cd ~/Dropbox'
+alias db="cd ~/Dropbox"
+alias doc="cd ~/Documents"
 
 # Rails aliases
-alias rs='be rails s'
+alias rs="be rails s"
 alias rc="rails console"
 alias seed="rake db:seed"
+alias grate="rake db:migrate"
+alias tgrate="RAILS_ENV=test rake db:migrate"
 
 # Local directories
 alias pgn_data='cd /Users/csprehe/Dropbox/DevMyndTeam/Clients/640Labs/SamplePGNData'
@@ -61,6 +66,9 @@ alias batty='cd /Users/csprehe/Sites/devmynd/batty'
 alias gcw='cd /Users/csprehe/Sites/devmynd/grandcentral_web'
 alias gca='cd /Users/csprehe/Sites/devmynd/grandcentral_api'
 alias me='cd /Users/csprehe/Sites/csprehe'
+alias tst='cd /Users/csprehe/Sites/devmynd/topsteptrader'
+alias esg='cd /Users/csprehe/Sites/sandbox/elasticsearch_geohash_example'
+alias ww='cd /Users/csprehe/Sites/weekly_whiskey'
 
 # Aliases for services
 alias redis_start="redis-server /usr/local/etc/redis.conf"
@@ -69,6 +77,7 @@ alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias rem="redis-cli MONITOR"
 alias mongo="mongod"
 alias rbsrv="ruby -run -e httpd . -p 12345"
+alias es='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
 
 # Rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
