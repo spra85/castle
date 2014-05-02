@@ -22,6 +22,7 @@ alias esplug="open /Users/csprehe/Sites/elasticsearch-head/index.html"
 alias castle="cd /Users/csprehe/Sites/castle"
 alias soit="source ~/.bash_profile"
 alias bi="bundle install"
+alias ogr="ogr2ogr -f"
 
 # Git Aliases
 alias gs='git status'
@@ -33,9 +34,11 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gp='git push'
 alias gr='git pull --rebase'
+alias gpr='git pull --rebase'
 alias gv='git remote -v'
 alias gla='git gla'
 alias gap='git add -p'
+alias gcm='git commit -m'
 
 # Directory navigation
 alias ~="cd ~"
@@ -69,6 +72,9 @@ alias me='cd /Users/csprehe/Sites/csprehe'
 alias tst='cd /Users/csprehe/Sites/devmynd/topsteptrader'
 alias esg='cd /Users/csprehe/Sites/sandbox/elasticsearch_geohash_example'
 alias ww='cd /Users/csprehe/Sites/weekly_whiskey'
+alias ss='cd /Users/csprehe/Sites/shapeshifter'
+alias ip='cd /Users/csprehe/Pictures/iPhoto\ Library.photolibrary/Masters'
+alias chi='cd /Users/csprehe/Sites/devmynd/chicago_cms'
 
 # Aliases for services
 alias redis_start="redis-server /usr/local/etc/redis.conf"
@@ -79,8 +85,11 @@ alias mongo="mongod"
 alias rbsrv="ruby -run -e httpd . -p 12345"
 alias es='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
 
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
+
 # Rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH=/usr/local/bin:$PATH
 eval "$(rbenv init -)"
 
 # Bash Completion
@@ -124,9 +133,3 @@ export RUBY_GC_HEAP_FREE_SLOTS=200000
 export RUBY_GC_HEAP_INIT_SLOTS=40000
 
 export CFLAGS="-march=core2 -O3 -pipe -fomit-frame-pointer"
-
-# Java HOME
-export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
-export PATH=$JAVA_HOME/bin:$PATH
-
-export PATH=/usr/local/bin:$PATH
