@@ -1,0 +1,73 @@
+# Aliases
+alias q="exit"
+alias tree="tree --dirsfirst -lFC"
+alias grep="grep --color=auto"
+alias s="cd ~/Sites"
+alias be="bundle exec"
+alias rst="touch tmp/restart.txt && echo "Restarted.""
+alias tlog="tail -f log/development.log"
+alias cuke="be rake cucumber"
+alias rspc="be rake spec"
+alias memz="top -o vsize"
+alias cpu="top -o cpu"
+alias fml="be foreman start -f Procfile.local"
+alias fmld="be foreman start -f Procfile.development"
+alias rb="dev && cd ruby"
+alias js="dev && cd javascript"
+alias esplug="open /Users/csprehe/Sites/elasticsearch-head/index.html"
+alias castle="cd /Users/csprehe/Sites/castle"
+alias soit="source ~/.bash_profile"
+alias bi="bundle install"
+alias ogr="ogr2ogr -f"
+alias snips="ls -a ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets | cat"
+alias snippets="cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets"
+
+# Aliases for services
+alias redis_start="redis-server /usr/local/etc/redis.conf"
+alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias rem="redis-cli MONITOR"
+alias mongo="mongod"
+alias rbsrv="ruby -run -e httpd . -p 12345"
+alias es='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
+
+# Git Aliases
+alias gs='git status'
+alias st='git status'
+alias ga='git add --all'
+alias gc='git commit'
+alias gl='git gl'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gp='git push'
+alias gr='git pull --rebase'
+alias gpr='git pull --rebase'
+alias gv='git remote -v'
+alias gla='git gla'
+alias gap='git add -p'
+alias gcm='git commit -m'
+
+# Rails aliases
+alias rs="be rails s"
+alias rc="rails console"
+alias seed="rake db:seed"
+alias grate="rake db:migrate"
+alias tgrate="RAILS_ENV=test rake db:migrate"
+
+# Directory navigation
+alias ~="cd ~"
+alias home="cd ~"
+alias ..="cd ../"
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias lst="ls -alh"
+alias dt="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+alias db="cd ~/Dropbox"
+alias doc="cd ~/Documents"
+
+alias ja='cd /Users/csprehe/Sites/javascript'
+alias back='cd /Users/csprehe/Sites/javascript/backbone'
+alias ang='cd /Users/csprehe/Sites/javascript/angular'
+alias emb='cd /Users/csprehe/Sites/javascript/ember'
+alias em='cd /Users/csprehe/Sites/javascript/ember'
