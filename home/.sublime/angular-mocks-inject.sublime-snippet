@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+beforeEach(inject(function(${1:\$rootScope}) {
+  scope = \$rootScope.\$new();
+}));
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>inj</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>
