@@ -51,9 +51,9 @@ if [ -f ~/git_log.sh ]; then
 fi
 
 # Baptize
-if [ -f ~/.baptize/lib/baptize.sh ]; then
-  source ~/.baptize/lib/baptize.sh
-fi
+# if [ -f ~/.baptize/lib/baptize.sh ]; then
+#   source ~/.baptize/lib/baptize.sh
+# fi
 
 [ -z "$PS1" ] || PS1="${GREEN}\h${LGRAY}:${LBLUE}\W${RED}\$(__git_ps1 '(%s)') ${GREEN}\u${NORM}\$ "
 
