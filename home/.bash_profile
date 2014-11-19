@@ -40,6 +40,11 @@ if [ -f ~/.project_aliases ]; then
   source ~/.project_aliases
 fi
 
+# Bash functions
+if [ -f ~/functions.sh ]; then
+  source ~/functions.sh
+fi
+
 # Sublime snippets
 if [ -f ~/snippets.sh ]; then
   source ~/snippets.sh
