@@ -35,6 +35,10 @@ if [ -f ~/.global_aliases ]; then
   source ~/.global_aliases
 fi
 
+if [ -f ~/.local_environment_variables ]; then
+  source ~/.local_environment_variables
+fi
+
 # Project aliases
 if [ -f ~/.project_aliases ]; then
   source ~/.project_aliases
