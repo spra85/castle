@@ -23,6 +23,7 @@ alias vp="vagrant provision"
 alias vdown="vagrant halt"
 alias vstat="vagrant status"
 alias vssh="vagrant ssh"
+alias dc="docker-compose"
 
 # Aliases for services
 alias redis_start="redis-server /usr/local/etc/redis.conf"
@@ -31,6 +32,9 @@ alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias rem="redis-cli MONITOR"
 alias rbsrv="ruby -run -e httpd . -p 12345"
 alias es='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
+
+# Aliases for local project scripts
+alias ss="./scripts/serve"
 
 # Git Aliases
 alias gs='git status'
