@@ -5,3 +5,9 @@ function pman {
     echo "Usage: pman [application]"
   fi
 }
+
+function glogp {
+  git log --pretty=format:"%ad - %an: %s" --after="$1" --until="$2"
+}
+
+
