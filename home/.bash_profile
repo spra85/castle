@@ -3,20 +3,14 @@ export EDITOR="subl -n"
 export BUNDLER_EDITOR="subl -n"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/usr/local/bin:$PATH"
+# Add globally installed Python binaries
+export PATH="$HOME/.asdf/installs/python/3.8.2/bin:$PATH"
+# Add PostgreSQL.app binaries
+export PATH="/Applications/Postgres.app/Contents/Versions/11/bin:$PATH"
 
 # Bash Completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   source `brew --prefix`/etc/bash_completion
-fi
-
-# Bash Prompt
-# if [ -f ~/.bash_prompt ]; then
-#   source ~/.bash_prompt
-# fi
-
-# Git Completion
-if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
-  source `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
 
 # Git Prompt
@@ -63,9 +57,12 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
 
-# [ -z "$PS1" ] || PS1="${GREEN}\h${LGRAY}:${LBLUE}\W${RED}\$(__git_ps1 '(%s)') ${GREEN}\u${NORM}\$ "
-
 # Terminal
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export HISTCONTROL=ignoredups
+
+export SHP2PGSQL=/usr/local/bin/shp2pgsql
+# export PYTHONBREAKPOINT=ipdb.set_trace
+
+source $(brew --prefix asdf)/asdf.sh

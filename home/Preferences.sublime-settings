@@ -1,4 +1,21 @@
 {
+	"auto_format_on_save": true,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
 	"draw_white_space": "none",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -9,26 +26,36 @@
 		"*.log*",
 		".tags",
 		".tags_sorted_by_file",
-		".gemtags"
+		".eslintcache",
+		".gemtags",
+		"*.pyc",
+		"*.csv",
+		"*.tif"
 	],
 	"folder_exclude_patterns":
 	[
 		"log",
 		"tmp",
+		"build",
+		"build/static",
 		"public/uploads",
 		".sass-cache",
 		".git",
-		"coverage",
+		".cache",
 		".bundle",
+		"node_modules",
 		"spec/cassettes",
-		"node_modules"
+		"shapefile_management/downloads",
+		"shapefile_management/normalized",
+		"shapefile_management/sql",
+		"shapefile_management/temp"
 	],
 	"font_face": "Monaco",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 14.0,
+	"font_size": 16.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[

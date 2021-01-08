@@ -24,11 +24,17 @@ alias vdown="vagrant halt"
 alias vstat="vagrant status"
 alias vssh="vagrant ssh"
 alias dc="docker-compose"
+alias dr="docker-compose run --volume "$HOME/.bashrc:/root/.bashrc" --volume "$HOME/.bash_history:/root/.bash_history" --volume "$HOME/.pdbrc.py:/root/.pdbrc.py""
+alias tf="terraform"
+alias k="kubectl"
+alias ng="~/Development/ngrok http"
+alias ngf="~/Development/ngrok http -hostname=tillable.ngrok.io 3000"
+alias nga="~/Development/ngrok http -hostname=tillable-api.ngrok.io 5000"
 
 # Aliases for services
 alias redis_start="redis-server /usr/local/etc/redis.conf"
-alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias pg_start="brew services start postgresql"
+alias pg_stop="brew services stop postgresql"
 alias rem="redis-cli MONITOR"
 alias rbsrv="ruby -run -e httpd . -p 12345"
 alias es='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
@@ -51,6 +57,8 @@ alias gv='git remote -v'
 alias gla='git gla'
 alias gap='git add -p'
 alias gcm='git commit -m'
+alias gprune="git fetch -p && git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs -r git branch -d"
+
 
 # Ruby aliases
 
@@ -78,3 +86,6 @@ alias dl="cd ~/Downloads"
 alias db="cd ~/Dropbox"
 alias doc="cd ~/Documents"
 alias dev="cd ~/Development"
+
+alias f_start="FLASK_APP=flasky.py flask run"
+alias shp2geojson="ogr2ogr -f GeoJSON -t_srs crs:84"
